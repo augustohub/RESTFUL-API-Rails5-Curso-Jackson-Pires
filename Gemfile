@@ -8,10 +8,27 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.1'
+# Repository for collecting Locale data for Ruby on Rails I18n as well as other
+# interesting, Rails related I18n stuff
+gem 'rails-i18n', '~> 5.0.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
+
+gem 'foreman'
+
+gem 'jwt'
+
+gem 'devise_token_auth'
+
+gem 'devise-i18n'
+
+gem 'versionist'
+
+gem 'kaminari'
+
+# gem 'api-pagination'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
@@ -23,11 +40,19 @@ gem 'puma', '~> 3.7'
 # gem 'capistrano-rails', group: :development
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-# gem 'rack-cors'
+gem 'rack-cors'
+
+gem 'active_model_serializers', '~> 0.10.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+
+  gem 'rspec-rails', '~> 3.6'
+  # A library for generating fake data such as names, addresses, and phone numbers.
+  gem 'faker', '~> 1.6', '>= 1.6.6'
+
+  gem 'pry-rails'
 end
 
 group :development do
